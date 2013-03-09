@@ -1,0 +1,43 @@
+* { box-sizing: border-box }
+
+body { padding: 0 0 200px 0; font-size: 16px; line-height: 1.6em; font-family: Helvetica, Arial, Verdana; color: #222; text-shadow: 1px 1px 0 #fff;
+	background: url('../img/tile.gif') #eee;
+}
+
+h1 { font-size: 22px; }
+h2 { font-size: 18px; }
+h3 { font-size: 16px; }
+
+a { color: #4083A9; text-decoration: none; }
+a:hover { color: #205F82; text-decoration: underline; }
+
+p { margin: 20px 0; }
+
+.pagespan { width: 480px; }
+
+/* Header */
+header { height: 59px; border-bottom: 2px solid black; text-shadow: none; background: url('../img/title_bar.png') repeat-x center top; }
+header .pagespan { display: block; height: 100%; margin: 0 auto; padding: 0 60px; background: url('../img/icon_48.png') no-repeat center center; }
+header .pagespan > a { position: relative; float: left; width: 100px; height: 28px; top: 15px; text-indent: 100%; overflow: hidden;
+	background: url('../img/dribbble_logo.png') no-repeat left bottom;
+}
+header .pagespan > a:hover { background-position: left top; }
+header .pagespan > h1 { float: right; margin: 0; padding: 0 20px 0 0; font-size: 24px; font-weight: normal; font-style: italic; line-height: 60px; color: #ccc; }
+
+/* Options */
+#options { margin: 20px auto 0 auto; padding: 0; list-style: none; }
+
+#options > li { padding: 30px 25px; border-bottom: 1px dashed #ccc; }
+#options > li:last-child { border-bottom: 0; }
+
+#options > li > label { display: block; float: left; width: 190px; margin-bottom: 16px; font-size: 18px; font-weight: bold; color: #56636e; cursor: pointer; }
+#options > li > select { margin-top: -5px; }
+#options > li > span { clear: both; display: block; margin-left: 20px; color: #8d9ba6; }
+#options > li > span:before { padding-right: 7px; font-weight: bold; content: "::"; }
+
+/* Footer */
+footer { margin: 20px auto 0; color: #aaa; border-top: 1px solid #ddd; font-style: italic; }
+
+/* Helper classes */
+.fleft { float: left; }
+.fright { float: right; }

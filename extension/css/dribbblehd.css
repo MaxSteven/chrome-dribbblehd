@@ -1,0 +1,94 @@
+/*!
+ * Dribbble HD extension
+ */
+
+/* Shot styles */
+body #main ol.dribbbles li.group { width: 420px; margin: 0 0 30px 20px !important; }
+body #main ol.dribbbles li.group .dribbble-shot { position: relative; background-image: url('../img/dribbble_check.png'); } /* Replaces chessboard background for bigger one */
+body #main ol.dribbbles li.group .dribbble-img { width: 400px; height: 300px; padding: 0; }
+body #main ol.dribbbles li.group .dribbble-img .dribbble-link img { display: block; position: absolute; top: 10px; left: 10px;
+	width: 400px; height: 300px; max-width: 400px; max-height: 300px;
+}
+body #main ol.dribbbles li.group .dribhd-loading { position: absolute; width: 50px; height: 50px; top: 50%; left: 50%; margin: -25px 0 0 -25px;
+	background: url('../img/loading.gif') no-repeat center center rgba(0,0,0,.6); z-index: 10; border-radius: 50%;
+}
+body #main ol.dribbbles li.group .dribbble-img .dribbble-link .hd {  }
+body #main ol.dribbbles li.group .dribbble-over { width: 420px; border-radius: 4px; }
+
+body #main ol.dribbbles li.group div.dribbble span.attachments-mark { margin-right: 5px; }
+body #main .dribhd-shotname { display: inline-block; font-weight: bold; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; width: 230px; }
+
+/* Shared element styles */
+#header-inner,
+#footer-inner,
+#main .page,
+#main.main-full,
+#content { max-width: none; }
+#main ol.dribbbles { margin-left: -20px; }
+
+/* 2 shots per row */
+@media all and (max-width: 1339px) {
+	.dribhd #header-inner,
+	.dribhd #content,
+	.dribhd #footer-inner,
+	.dribhd #main { width: 860px; }
+	.dribhd #main ol.dribbbles { width: 880px; }
+	.dribhd #footer ul#footer-nav { width: 600px; }
+}
+
+/* 3 shots per row */
+@media all and (min-width: 1340px) and (max-width: 1779px) {
+	.dribhd #header-inner,
+	.dribhd #content,
+	.dribhd #footer-inner,
+	.dribhd #main { width: 1300px; }
+	.dribhd #main ol.dribbbles { width: 1320px; }
+}
+
+/* 4 shots per row */
+@media all and (min-width: 1780px) and (max-width: 2239px) {
+	.dribhd #header-inner,
+	.dribhd #content,
+	.dribhd #footer-inner,
+	.dribhd #main { width: 1740px; }
+	.dribhd #main ol.dribbbles { width: 1760px; }
+}
+
+/* 5+ shots per row */
+@media all and (min-width: 2240px) {
+	.dribhd #header-inner,
+	.dribhd #content,
+	.dribhd #footer-inner,
+	.dribhd #main { width: 2180px; }
+	.dribhd #main ol.dribbbles { width: 2200px; }
+}
+
+/* Sidebar pages styles */
+.dribhd-sidebar #main + .secondary { width: 220px; }
+
+/* 2 shots per row */
+@media all and (max-width: 1569px) {
+	.dribhd-sidebar #header-inner,
+	.dribhd-sidebar #footer-inner,
+	.dribhd-sidebar #content { width: 1100px; }
+	.dribhd-sidebar #main { width: 860px; }
+	.dribhd-sidebar #main ol.dribbbles { width: 880px; }
+}
+
+/* 3 shots per row */
+@media all and (min-width: 1570px) and (max-width: 2009px) {
+	.dribhd-sidebar #header-inner,
+	.dribhd-sidebar #footer-inner,
+	.dribhd-sidebar #content { width: 1550px; }
+	.dribhd-sidebar #main { width: 1310px; }
+	.dribhd-sidebar #main ol.dribbbles { width: 1330px; }
+}
+
+/* 4 shots per row */
+@media all and (min-width: 2010px) {
+	.dribhd-sidebar #header-inner,
+	.dribhd-sidebar #footer-inner,
+	.dribhd-sidebar #content { width: 1990px; }
+	.dribhd-sidebar #main { width: 1750px; }
+	.dribhd-sidebar #main ol.dribbbles { width: 1770px; }
+}

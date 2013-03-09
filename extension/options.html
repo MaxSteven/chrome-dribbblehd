@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Dribble HD - Options</title>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen"/>
+	<link rel="stylesheet" href="css/options.css" type="text/css" media="screen"/>
+</head>
+<body>
+	<header>
+		<div class="pagespan">
+			<a href="http://dribbble.com/">Dribbble</a>
+			<h1>Options</h1>
+		</div>
+	</header>
+
+	<ul id="options" class="pagespan">
+		<li>
+			<label for="shots_per_row">Shots per row</label>
+			<select disabled>
+				<option value="responsive" selected>Responsive</option>
+			</select>
+			<span>to increase maintanability, this is now responsive only</span>
+		</li>
+
+		<li>
+			<label for="hide_overlay">Hide shot overlay</label> <input type="checkbox" name="hide_overlay" value="1" id="hide_overlay" />
+			<span>that white overlay with shot name on mouse hover</span>
+			<span>hiding it will enable you to save the image</span>
+			<span>shot name will be placed under the image instead</span>
+		</li>
+	</ul>
+
+	<footer class="pagespan">
+		<p>
+			Extension by <a href="http://twitter.com/Darsain">@Darsain</a>
+			<a href="http://github.com/Darsain/chrome-dribbblehd/issues" class="fright">Issues Tracker</a>
+		</p>
+	</footer>
+
+	<script type="text/javascript" src="js/helpers.js"></script>
+	<script type="text/javascript" src="js/options.js"></script>
+</body>
+</html>
