@@ -1,4 +1,3 @@
-/*global chrome, h */
 (function (undefined) {
 	'use strict';
 

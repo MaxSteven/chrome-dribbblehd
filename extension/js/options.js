@@ -1,4 +1,3 @@
-/*global h */
 (function (undefined) {
 	'use strict';
 
@@ -21,8 +20,8 @@
 		}
 	});
 
-	// save options on input change
-	h.bind(container, 'change', function (event) { console.log(event);
+	// Save options on change
+	h.bind(container, 'change', function (event) {
 		var element = event.target;
 		var name = element.name;
 

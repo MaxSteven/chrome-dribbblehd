@@ -1,0 +1,6 @@
+node_modules/
+psd/
+screens/
+tmp/
+test/tmp/
+npm-debug.log
