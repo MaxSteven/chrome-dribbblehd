@@ -10,6 +10,10 @@ When reporting a bug, please describe it thoroughly, with a URL where it happens
 
 Contributions are welcome! But please, read the [Contributing Guidelines](CONTRIBUTING.md).
 
+## License
+
+MIT
+
 ## Release History
 
 **1.4.1** :: *10th Mar 2013*
