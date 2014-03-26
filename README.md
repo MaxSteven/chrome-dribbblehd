@@ -18,7 +18,7 @@ MIT
 
 **1.4.2** :: *26th Mar 2014*
 
-- Fix for new dribble routing.
+- Fix for new Dribbble routing.
 
 **1.4.1** :: *10th Mar 2013*
 
