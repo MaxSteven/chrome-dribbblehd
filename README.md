@@ -16,6 +16,10 @@ MIT
 
 ## Release History
 
+**1.4.2** :: *26th Mar 2014*
+
+- Fix for new dribble routing.
+
 **1.4.1** :: *10th Mar 2013*
 
 - Changing packaging style. Hopefully fixing the mysterious
