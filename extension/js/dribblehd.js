@@ -12,14 +12,9 @@
 	var runIn = [
 		'', // homepage
 		'shots',
-		'shots/popular',
-		'shots/popular/*',
-		'shots/everyone',
-		'shots/debuts',
-		'shots/following',
-		'shots/suggestions'
+		'suggestions'
 	].concat(sidebars);
-	var isProfile = document.body.id === 'profile';
+	var isProfile = ~['profile', 'user-profile'].indexOf(document.body.id);
 	var isSidebar = isProfile || h.matches(path, sidebars);
 	var shots = h.toArray(document.querySelectorAll('#main ol.dribbbles > li'));
 	var defaults = {
