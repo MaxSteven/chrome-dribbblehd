@@ -1,34 +1,38 @@
 (function (undefined) {
 	'use strict';
 
-	var path = window.location.pathname.replace(/^\/|\/$/g,'');
+	var pathname = window.location.pathname;
 	var sidebars = [
-		'search',
-		'colors/*',
-		'tags/*',
-		'*/lists/*',
-		'*/buckets/*'
+		'/search',
+		'/colors/*',
+		'/tags/*',
+		'/*/lists/*',
+		'/*/buckets/*'
 	];
 	var runIn = [
-		'', // homepage
-		'shots',
-		'suggestions'
+		'/', // homepage
+		'/shots',
+		'/suggestions'
 	].concat(sidebars);
-	var isProfile = ~['profile', 'user-profile'].indexOf(document.body.id);
-	var isSidebar = isProfile || h.matches(path, sidebars);
+	var isSidebar = h.matches(pathname, sidebars);
 	var shots = h.toArray(document.querySelectorAll('#main ol.dribbbles > li'));
 	var defaults = {
 		hide_overlay: false
 	};
 
+	// When profile page, add current pathname to runIn array
+	if (~['profile', 'user-profile'].indexOf(document.body.id)) {
+		runIn.push(pathname);
+	}
+
 	// Terminate if we are not in one of the allowed locations, or there are no shots
-	if (!isProfile && (!h.matches(path, runIn) || !shots.length)) {
+	if (!h.matches(pathname, runIn) || !shots.length) {
 		return;
 	}
 
 	// Include custom CSS
 	document.head.appendChild(h.createElement('link', {
-		href: chrome.extension.getURL("css/dribbblehd.css"),
+		href: chrome.extension.getURL('css/dribbblehd.css'),
 		type: 'text/css',
 		rel: 'stylesheet',
 		media: 'screen'
@@ -45,7 +49,7 @@
 		// Modify shots
 		shots.forEach(function (shot) {
 			var link     = shot.querySelector('.dribbble-link');
-			var hdPath   = link.querySelector('img').src.replace("_teaser","");
+			var hdPath   = link.querySelector('img').src.replace('_teaser','');
 			var newImage = h.createElement('img');
 			var loader   = h.createElement('span', {
 				className: 'dribhd-loading'

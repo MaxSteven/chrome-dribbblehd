@@ -97,11 +97,13 @@
 		 * @return {Boolean}
 		 */
 		matches: function (needle, haystack) {
+			needle = needle !== '/' ? needle.replace(/\/$/,'') : needle;
 			haystack = h.toArray(haystack);
 
+			var pattern;
 			for (var i = 0, l = haystack.length; i < l; i++) {
-				var pattern = new RegExp('^' + haystack[i].replace(/\*/g, '[a-zA-Z0-9\\._\\-]+') + '$');
-				if (needle.match(pattern)) {
+				pattern = new RegExp('^' + haystack[i].replace(/\*/g, '[a-zA-Z0-9\\._\\-]+') + '$');
+				if (pattern.exec(needle)) {
 					return true;
 				}
 			}

@@ -1,6 +1,5 @@
-node_modules/
-psd/
-screens/
-tmp/
-test/tmp/
+build
+node_modules
+psd
+screens
 npm-debug.log

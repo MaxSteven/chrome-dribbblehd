@@ -3,7 +3,7 @@
  */
 
 /* Shot styles */
-body #main ol.dribbbles li.group { width: 420px; margin: 0 0 30px 20px !important; }
+body #main ol.dribbbles li.group { width: 420px; margin: 0 20px 30px 0; }
 body #main ol.dribbbles li.group .dribbble-shot { position: relative; background-image: url('../img/dribbble_check.png'); } /* Replaces chessboard background for bigger one */
 body #main ol.dribbbles li.group .dribbble-img { width: 400px; height: 300px; padding: 0; }
 body #main ol.dribbbles li.group .dribbble-img .dribbble-link img { display: block; position: absolute; top: 10px; left: 10px;
@@ -23,16 +23,18 @@ body #main .dribhd-shotname { display: inline-block; font-weight: bold; white-sp
 #footer-inner,
 #main .page,
 #main.main-full,
+#wrap .profile-dash-inner,
 #content { max-width: none; }
-#main ol.dribbbles { margin-left: -20px; }
 
 /* 2 shots per row */
 @media all and (max-width: 1339px) {
 	.dribhd #header-inner,
 	.dribhd #content,
 	.dribhd #footer-inner,
-	.dribhd #main { width: 860px; }
-	.dribhd #main ol.dribbbles { width: 880px; }
+	.dribhd #wrap .profile-dash-inner,
+	.dribhd #main,
+	.dribhd #main ol.dribbbles { width: 860px; }
+	.dribhd #main ol.dribbbles li.group:nth-child(2n) { margin-right: 0; }
 	.dribhd #footer ul#footer-nav { width: 600px; }
 }
 
@@ -41,8 +43,10 @@ body #main .dribhd-shotname { display: inline-block; font-weight: bold; white-sp
 	.dribhd #header-inner,
 	.dribhd #content,
 	.dribhd #footer-inner,
-	.dribhd #main { width: 1300px; }
-	.dribhd #main ol.dribbbles { width: 1320px; }
+	.dribhd #wrap .profile-dash-inner,
+	.dribhd #main,
+	.dribhd #main ol.dribbbles { width: 1300px; }
+	.dribhd #main ol.dribbbles li.group:nth-child(3n) { margin-right: 0; }
 }
 
 /* 4 shots per row */
@@ -50,8 +54,10 @@ body #main .dribhd-shotname { display: inline-block; font-weight: bold; white-sp
 	.dribhd #header-inner,
 	.dribhd #content,
 	.dribhd #footer-inner,
-	.dribhd #main { width: 1740px; }
-	.dribhd #main ol.dribbbles { width: 1760px; }
+	.dribhd #wrap .profile-dash-inner,
+	.dribhd #main,
+	.dribhd #main ol.dribbbles { width: 1740px; }
+	.dribhd #main ol.dribbbles li.group:nth-child(4n) { margin-right: 0; }
 }
 
 /* 5+ shots per row */
@@ -59,8 +65,10 @@ body #main .dribhd-shotname { display: inline-block; font-weight: bold; white-sp
 	.dribhd #header-inner,
 	.dribhd #content,
 	.dribhd #footer-inner,
-	.dribhd #main { width: 2180px; }
-	.dribhd #main ol.dribbbles { width: 2200px; }
+	.dribhd #wrap .profile-dash-inner,
+	.dribhd #main,
+	.dribhd #main ol.dribbbles { width: 2180px; }
+	.dribhd #main ol.dribbbles li.group:nth-child(5n) { margin-right: 0; }
 }
 
 /* Sidebar pages styles */
@@ -71,8 +79,9 @@ body #main .dribhd-shotname { display: inline-block; font-weight: bold; white-sp
 	.dribhd-sidebar #header-inner,
 	.dribhd-sidebar #footer-inner,
 	.dribhd-sidebar #content { width: 1100px; }
-	.dribhd-sidebar #main { width: 860px; }
-	.dribhd-sidebar #main ol.dribbbles { width: 880px; }
+	.dribhd-sidebar #main,
+	.dribhd-sidebar #main ol.dribbbles { width: 860px; }
+	.dribhd-sidebar #main ol.dribbbles li.group:nth-child(2n) { margin-right: 0; }
 }
 
 /* 3 shots per row */
@@ -80,8 +89,9 @@ body #main .dribhd-shotname { display: inline-block; font-weight: bold; white-sp
 	.dribhd-sidebar #header-inner,
 	.dribhd-sidebar #footer-inner,
 	.dribhd-sidebar #content { width: 1550px; }
-	.dribhd-sidebar #main { width: 1310px; }
-	.dribhd-sidebar #main ol.dribbbles { width: 1330px; }
+	.dribhd-sidebar #main,
+	.dribhd-sidebar #main ol.dribbbles { width: 1300px; }
+	.dribhd-sidebar #main ol.dribbbles li.group:nth-child(3n) { margin-right: 0; }
 }
 
 /* 4 shots per row */
@@ -89,6 +99,7 @@ body #main .dribhd-shotname { display: inline-block; font-weight: bold; white-sp
 	.dribhd-sidebar #header-inner,
 	.dribhd-sidebar #footer-inner,
 	.dribhd-sidebar #content { width: 1990px; }
-	.dribhd-sidebar #main { width: 1750px; }
-	.dribhd-sidebar #main ol.dribbbles { width: 1770px; }
+	.dribhd-sidebar #main,
+	.dribhd-sidebar #main ol.dribbbles { width: 1750px; }
+	.dribhd-sidebar #main ol.dribbbles li.group:nth-child(4n) { margin-right: 0; }
 }
