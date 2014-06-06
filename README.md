@@ -16,7 +16,7 @@ MIT
 
 ## Release History
 
-**1.4.2** :: *06th Jun 2014*
+**1.4.3** :: *06th Jun 2014*
 
 - New Dribbble profile page.
 
