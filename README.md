@@ -16,6 +16,10 @@ MIT
 
 ## Release History
 
+**1.4.2** :: *06th Jun 2014*
+
+- New Dribbble profile page.
+
 **1.4.2** :: *26th Mar 2014*
 
 - Fix for new Dribbble routing.
